@@ -1,0 +1,21 @@
+<div id="container">
+  <app-navbar-home></app-navbar-home>
+  <main>
+    <header>
+      <input type="text" id="myInput" placeholder="Search" />
+    </header>
+    <ul id="myDIV">
+      <li *ngFor="let user of users">
+        <div *ngIf="!(user._id == current_id)">
+          <a [routerLink]="[user._id]">
+            <h5>{{ user.username }}</h5>
+            <h6>
+              <span class="status orange"></span>
+              {{ user.status }}
+            </h6>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </main>
+</div>

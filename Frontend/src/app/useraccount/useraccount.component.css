@@ -1,0 +1,23 @@
+#main {
+  margin: 0;
+  padding: 0;
+  background-color: #fcf8e8;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#button-div {
+  text-align: center;
+}
+.btn {
+  background-color: #ecb390;
+}
+
+.fa {
+  color: #ecb390;
+}
+.list ul {
+  list-style-type: none;
+}
